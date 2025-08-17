@@ -15,32 +15,32 @@ export default function Projects() {
         <CarouselContent>
           <CarouselItem className="md:basis-1/3">
             <div className="overflow-hidden rounded-lg border border-border/60 bg-card hover-scale animate-scale-in">
-              <iframe src="https://www.behance.net/embed/project/232163545?ilo0=1" height="316" width="404" allowFullScreen loading="lazy" frameBorder="0" allow="clipboard-write" referrerPolicy="strict-origin-when-cross-origin" title="Proyecto Behance 232163545" className="w-full"></iframe>
+              <iframe src="https://www.behance.net/embed/project/232163545?ilo0=1" height="316" width="404" allowFullScreen loading="lazy" frameBorder="0" allow="clipboard-write" referrerPolicy="strict-origin-when-cross-origin" className="w-full"></iframe>
             </div>
           </CarouselItem>
           <CarouselItem className="md:basis-1/3">
             <div className="overflow-hidden rounded-lg border border-border/60 bg-card hover-scale animate-scale-in">
-              <iframe src="https://www.behance.net/embed/project/223262561?ilo0=1" height="316" width="404" allowFullScreen loading="lazy" frameBorder="0" allow="clipboard-write" referrerPolicy="strict-origin-when-cross-origin" title="Proyecto Behance 223262561" className="w-full"></iframe>
+              <iframe src="https://www.behance.net/embed/project/223262561?ilo0=1" height="316" width="404" allowFullScreen loading="lazy" frameBorder="0" allow="clipboard-write" referrerPolicy="strict-origin-when-cross-origin" className="w-full"></iframe>
             </div>
           </CarouselItem>
           <CarouselItem className="md:basis-1/3">
             <div className="overflow-hidden rounded-lg border border-border/60 bg-card hover-scale animate-scale-in">
-              <iframe src="https://www.behance.net/embed/project/216920105?ilo0=1" height="316" width="404" allowFullScreen loading="lazy" frameBorder="0" allow="clipboard-write" referrerPolicy="strict-origin-when-cross-origin" title="Proyecto Behance 216920105" className="w-full"></iframe>
+              <iframe src="https://www.behance.net/embed/project/216920105?ilo0=1" height="316" width="404" allowFullScreen loading="lazy" frameBorder="0" allow="clipboard-write" referrerPolicy="strict-origin-when-cross-origin" className="w-full"></iframe>
             </div>
           </CarouselItem>
           <CarouselItem className="md:basis-1/3">
             <div className="overflow-hidden rounded-lg border border-border/60 bg-card hover-scale animate-scale-in">
-              <iframe src="https://www.behance.net/embed/project/215422833?ilo0=1" height="316" width="404" allowFullScreen loading="lazy" frameBorder="0" allow="clipboard-write" referrerPolicy="strict-origin-when-cross-origin" title="Proyecto Behance 215422833" className="w-full"></iframe>
+              <iframe src="https://www.behance.net/embed/project/215422833?ilo0=1" height="316" width="404" allowFullScreen loading="lazy" frameBorder="0" allow="clipboard-write" referrerPolicy="strict-origin-when-cross-origin" className="w-full"></iframe>
             </div>
           </CarouselItem>
           <CarouselItem className="md:basis-1/3">
             <div className="overflow-hidden rounded-lg border border-border/60 bg-card hover-scale animate-scale-in">
-              <iframe src="https://www.behance.net/embed/project/208402237?ilo0=1" height="316" width="404" allowFullScreen loading="lazy" frameBorder="0" allow="clipboard-write" referrerPolicy="strict-origin-when-cross-origin" title="Proyecto Behance 208402237" className="w-full"></iframe>
+              <iframe src="https://www.behance.net/embed/project/208402237?ilo0=1" height="316" width="404" allowFullScreen loading="lazy" frameBorder="0" allow="clipboard-write" referrerPolicy="strict-origin-when-cross-origin" className="w-full"></iframe>
             </div>
           </CarouselItem>
           <CarouselItem className="md:basis-1/3">
             <div className="overflow-hidden rounded-lg border border-border/60 bg-card hover-scale animate-scale-in">
-              <iframe src="https://www.behance.net/embed/project/178679695?ilo0=1" height="316" width="404" allowFullScreen loading="lazy" frameBorder="0" allow="clipboard-write" referrerPolicy="strict-origin-when-cross-origin" title="Proyecto Behance 178679695" className="w-full"></iframe>
+              <iframe src="https://www.behance.net/embed/project/178679695?ilo0=1" height="316" width="404" allowFullScreen loading="lazy" frameBorder="0" allow="clipboard-write" referrerPolicy="strict-origin-when-cross-origin" className="w-full"></iframe>
             </div>
           </CarouselItem>
         </CarouselContent>
