@@ -14,46 +14,112 @@ export default function Projects() {
       <Carousel className="w-full" opts={{ loop: true, align: "start" }}>
         <CarouselContent>
           <CarouselItem className="md:basis-1/3">
-            <div className="overflow-hidden rounded-lg border border-border/60 bg-card hover-scale animate-scale-in">
-              <div dangerouslySetInnerHTML={{
-                __html: '<iframe src="https://www.behance.net/embed/project/232163545?ilo0=1" height="316" width="404" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin" style="width: 100%;"></iframe>'
-              }} />
-            </div>
+            <a 
+              href="https://www.behance.net/gallery/232163545" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block overflow-hidden rounded-lg border border-border/60 bg-card hover-scale animate-scale-in group"
+            >
+              <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
+                <div className="text-center p-6">
+                  <h3 className="font-semibold text-lg mb-2">Proyecto Empresarial</h3>
+                  <p className="text-muted-foreground mb-4">Identidad corporativa completa</p>
+                  <span className="inline-flex items-center text-primary font-medium group-hover:underline">
+                    Ver en Behance →
+                  </span>
+                </div>
+              </div>
+            </a>
           </CarouselItem>
           <CarouselItem className="md:basis-1/3">
-            <div className="overflow-hidden rounded-lg border border-border/60 bg-card hover-scale animate-scale-in">
-              <div dangerouslySetInnerHTML={{
-                __html: '<iframe src="https://www.behance.net/embed/project/223262561?ilo0=1" height="316" width="404" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin" style="width: 100%;"></iframe>'
-              }} />
-            </div>
+            <a 
+              href="https://www.behance.net/gallery/223262561" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block overflow-hidden rounded-lg border border-border/60 bg-card hover-scale animate-scale-in group"
+            >
+              <div className="aspect-[4/3] bg-gradient-to-br from-secondary/20 to-secondary/5 flex items-center justify-center">
+                <div className="text-center p-6">
+                  <h3 className="font-semibold text-lg mb-2">Diseño Digital</h3>
+                  <p className="text-muted-foreground mb-4">Interfaz web moderna</p>
+                  <span className="inline-flex items-center text-primary font-medium group-hover:underline">
+                    Ver en Behance →
+                  </span>
+                </div>
+              </div>
+            </a>
           </CarouselItem>
           <CarouselItem className="md:basis-1/3">
-            <div className="overflow-hidden rounded-lg border border-border/60 bg-card hover-scale animate-scale-in">
-              <div dangerouslySetInnerHTML={{
-                __html: '<iframe src="https://www.behance.net/embed/project/216920105?ilo0=1" height="316" width="404" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin" style="width: 100%;"></iframe>'
-              }} />
-            </div>
+            <a 
+              href="https://www.behance.net/gallery/216920105" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block overflow-hidden rounded-lg border border-border/60 bg-card hover-scale animate-scale-in group"
+            >
+              <div className="aspect-[4/3] bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center">
+                <div className="text-center p-6">
+                  <h3 className="font-semibold text-lg mb-2">Branding Completo</h3>
+                  <p className="text-muted-foreground mb-4">Logo y aplicaciones</p>
+                  <span className="inline-flex items-center text-primary font-medium group-hover:underline">
+                    Ver en Behance →
+                  </span>
+                </div>
+              </div>
+            </a>
           </CarouselItem>
           <CarouselItem className="md:basis-1/3">
-            <div className="overflow-hidden rounded-lg border border-border/60 bg-card hover-scale animate-scale-in">
-              <div dangerouslySetInnerHTML={{
-                __html: '<iframe src="https://www.behance.net/embed/project/215422833?ilo0=1" height="316" width="404" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin" style="width: 100%;"></iframe>'
-              }} />
-            </div>
+            <a 
+              href="https://www.behance.net/gallery/215422833" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block overflow-hidden rounded-lg border border-border/60 bg-card hover-scale animate-scale-in group"
+            >
+              <div className="aspect-[4/3] bg-gradient-to-br from-primary/15 to-secondary/10 flex items-center justify-center">
+                <div className="text-center p-6">
+                  <h3 className="font-semibold text-lg mb-2">Marketing Digital</h3>
+                  <p className="text-muted-foreground mb-4">Campaña publicitaria</p>
+                  <span className="inline-flex items-center text-primary font-medium group-hover:underline">
+                    Ver en Behance →
+                  </span>
+                </div>
+              </div>
+            </a>
           </CarouselItem>
           <CarouselItem className="md:basis-1/3">
-            <div className="overflow-hidden rounded-lg border border-border/60 bg-card hover-scale animate-scale-in">
-              <div dangerouslySetInnerHTML={{
-                __html: '<iframe src="https://www.behance.net/embed/project/208402237?ilo0=1" height="316" width="404" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin" style="width: 100%;"></iframe>'
-              }} />
-            </div>
+            <a 
+              href="https://www.behance.net/gallery/208402237" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block overflow-hidden rounded-lg border border-border/60 bg-card hover-scale animate-scale-in group"
+            >
+              <div className="aspect-[4/3] bg-gradient-to-br from-secondary/15 to-accent/10 flex items-center justify-center">
+                <div className="text-center p-6">
+                  <h3 className="font-semibold text-lg mb-2">Desarrollo Web</h3>
+                  <p className="text-muted-foreground mb-4">Sitio web responsive</p>
+                  <span className="inline-flex items-center text-primary font-medium group-hover:underline">
+                    Ver en Behance →
+                  </span>
+                </div>
+              </div>
+            </a>
           </CarouselItem>
           <CarouselItem className="md:basis-1/3">
-            <div className="overflow-hidden rounded-lg border border-border/60 bg-card hover-scale animate-scale-in">
-              <div dangerouslySetInnerHTML={{
-                __html: '<iframe src="https://www.behance.net/embed/project/178679695?ilo0=1" height="316" width="404" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin" style="width: 100%;"></iframe>'
-              }} />
-            </div>
+            <a 
+              href="https://www.behance.net/gallery/178679695" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block overflow-hidden rounded-lg border border-border/60 bg-card hover-scale animate-scale-in group"
+            >
+              <div className="aspect-[4/3] bg-gradient-to-br from-accent/15 to-primary/10 flex items-center justify-center">
+                <div className="text-center p-6">
+                  <h3 className="font-semibold text-lg mb-2">Diseño Gráfico</h3>
+                  <p className="text-muted-foreground mb-4">Material promocional</p>
+                  <span className="inline-flex items-center text-primary font-medium group-hover:underline">
+                    Ver en Behance →
+                  </span>
+                </div>
+              </div>
+            </a>
           </CarouselItem>
         </CarouselContent>
         <CarouselPrevious />
