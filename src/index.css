@@ -132,4 +132,17 @@ All colors MUST be HSL.
   .spotlight {
     background: radial-gradient(600px 400px at var(--x, 50%) var(--y, 30%), hsl(var(--primary) / 0.15), transparent 60%);
   }
+
+  .animate-scroll-left {
+    animation: scroll-left 30s linear infinite;
+  }
+
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
 }
