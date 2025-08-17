@@ -19,7 +19,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contacto" className="container mx-auto py-20" aria-labelledby="contacto-title">
+    <section id="contacto" className="container mx-auto py-20 animate-fade-in" aria-labelledby="contacto-title">
       <div className="mb-8 text-center">
         <span className="text-primary font-medium">Contacto</span>
         <h2 id="contacto-title" className="font-display text-3xl md:text-4xl font-bold mt-2 animate-fade-in">Hablemos de tu proyecto</h2>
@@ -69,14 +69,29 @@ export default function Contact() {
         </form>
 
         <aside className="space-y-3">
-          <div className="bg-card border border-border/60 rounded-lg p-6">
+          <div className="bg-card border border-border/60 rounded-lg p-6 animate-scale-in">
+            <h3 className="font-semibold mb-2">Ubicación</h3>
+            <div className="overflow-hidden rounded-lg">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60067616.99114742!2d-64.00345725!3d23.2344835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xae96a92051d7c36d%3A0x9016f3c201e5036!2sDaez%20Digital%20%7C%20P%C3%A1ginas%20Web%20y%20Marketing%20para%20empresas!5e0!3m2!1ses!2sve!4v1755445848345!5m2!1ses!2sve" 
+                width="100%" 
+                height="200" 
+                style={{border: 0}} 
+                allowFullScreen 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Ubicación Daez Digital"
+              />
+            </div>
+          </div>
+          <div className="bg-card border border-border/60 rounded-lg p-6 animate-scale-in">
             <h3 className="font-semibold mb-2">Datos de contacto</h3>
             <ul className="space-y-2 text-muted-foreground">
               <li><a href="https://wa.me/584120591116" target="_blank" rel="noopener" className="hover:text-foreground">WhatsApp: +58 412 059 1116</a></li>
               <li><a href="mailto:daezdigital@gmail.com" className="hover:text-foreground">daezdigital@gmail.com</a></li>
             </ul>
           </div>
-          <div className="bg-card border border-border/60 rounded-lg p-6">
+          <div className="bg-card border border-border/60 rounded-lg p-6 animate-scale-in">
             <h3 className="font-semibold mb-2">Síguenos</h3>
             <ul className="space-y-2 text-muted-foreground">
               <li><a href="https://www.instagram.com/daez.digital/" target="_blank" rel="noopener" className="hover:text-foreground">Instagram</a></li>

@@ -7,6 +7,7 @@ import Services from "@/components/sections/Services";
 import Projects from "@/components/sections/Projects";
 import About from "@/components/sections/About";
 import Testimonials from "@/components/sections/Testimonials";
+import Instagram from "@/components/sections/Instagram";
 import Contact from "@/components/sections/Contact";
 import FinalCta from "@/components/sections/FinalCta";
 import FloatingWhatsApp from "@/components/common/FloatingWhatsApp";
@@ -55,6 +56,7 @@ const Index = () => {
         <Projects />
         <About />
         <Testimonials />
+        <Instagram />
         <Contact />
         <FinalCta />
       </main>

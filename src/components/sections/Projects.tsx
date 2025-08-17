@@ -2,7 +2,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 
 export default function Projects() {
   return (
-    <section id="proyectos" className="container mx-auto py-20" aria-labelledby="proyectos-title">
+    <section id="proyectos" className="container mx-auto py-20 animate-fade-in" aria-labelledby="proyectos-title">
       <div className="mb-8 flex items-end justify-between">
         <div>
           <span className="text-primary font-medium">Portafolio</span>

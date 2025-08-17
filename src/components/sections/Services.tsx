@@ -31,7 +31,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="servicios" className="container mx-auto py-20" aria-labelledby="servicios-title">
+    <section id="servicios" className="container mx-auto py-20 animate-fade-in" aria-labelledby="servicios-title">
       <div className="mb-10 text-center">
         <h2 id="servicios-title" className="font-display text-3xl md:text-4xl font-bold mb-4 animate-fade-in">Tu hoja de ruta hacia el éxito digital.</h2>
       </div>

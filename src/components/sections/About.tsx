@@ -4,7 +4,7 @@ import office from "@/assets/about-office.jpg";
 
 export default function About() {
   return (
-    <section id="sobre-nosotros" className="container mx-auto py-20" aria-labelledby="about-title">
+    <section id="sobre-nosotros" className="container mx-auto py-20 animate-fade-in" aria-labelledby="about-title">
       <div className="mb-8">
         <span className="text-primary font-medium">Sobre Nosotros</span>
         <h2 id="about-title" className="font-display text-3xl md:text-4xl font-bold mt-2 animate-fade-in">Personas, procesos y propósito</h2>

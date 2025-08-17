@@ -1,6 +1,6 @@
 export default function Solution() {
   return (
-    <section className="container mx-auto py-20">
+    <section className="container mx-auto py-20 animate-fade-in">
       <div className="mx-auto max-w-4xl text-center">
         <h2 className="font-display text-3xl md:text-4xl font-bold mb-6 animate-fade-in">
           No tienes que recorrer este camino solo. Somos tu socio estratégico digital.

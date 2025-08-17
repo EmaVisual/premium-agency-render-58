@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export default function FinalCta() {
   return (
-    <section className="container mx-auto py-24 text-center">
+    <section className="container mx-auto py-24 text-center animate-fade-in">
       <div className="mx-auto max-w-3xl">
         <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">¿Estás listo para escribir el próximo capítulo de tu negocio?</h2>
         <p className="text-lg text-muted-foreground mb-6">

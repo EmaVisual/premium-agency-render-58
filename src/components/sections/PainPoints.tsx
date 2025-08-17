@@ -10,7 +10,7 @@ const painPoints = [
 
 export default function PainPoints() {
   return (
-    <section className="container mx-auto py-20">
+    <section className="container mx-auto py-20 animate-fade-in">
       <div className="mx-auto max-w-4xl text-center">
         <h2 className="font-display text-3xl md:text-4xl font-bold mb-8 animate-fade-in">
           ¿Te suena familiar alguna de estas situaciones?
