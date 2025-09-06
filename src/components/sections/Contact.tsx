@@ -88,7 +88,7 @@ export default function Contact() {
             <h3 className="font-semibold mb-2">Datos de contacto</h3>
             <ul className="space-y-2 text-muted-foreground">
               <li><a href="https://wa.me/584120591116" target="_blank" rel="noopener" className="hover:text-foreground">WhatsApp: +58 412 059 1116</a></li>
-              <li><a href="mailto:daezdigital@gmail.com" className="hover:text-foreground">daezdigital@gmail.com</a></li>
+              <li><a href="mailto:info@daezdigital.com" className="hover:text-foreground">info@daezdigital.com</a></li>
             </ul>
           </div>
           <div className="bg-card border border-border/60 rounded-lg p-6 animate-scale-in">
