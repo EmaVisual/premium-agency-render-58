@@ -29,6 +29,7 @@ export default function Footer() {
             <li><a href="tel:+584120591116" className="hover:text-foreground">+58 412 059 1116</a></li>
             <li><a href="mailto:info@daezdigital.com" className="hover:text-foreground">info@daezdigital.com</a></li>
             <li><a href="https://wa.me/584120591116" target="_blank" rel="noopener" className="hover:text-foreground">WhatsApp Business</a></li>
+            <li><a href="https://share.google/e9z1JVLc2hzpralMC" target="_blank" rel="noopener" className="hover:text-foreground">Google Business Profile</a></li>
           </ul>
         </div>
       </div>
