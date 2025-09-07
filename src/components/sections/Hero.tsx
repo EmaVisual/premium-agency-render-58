@@ -96,10 +96,45 @@ export default function Hero() {
                   className="h-12 object-contain opacity-60 hover:opacity-100 transition-opacity"
                 />
               </div>
-              <div className="flex items-center justify-center min-w-[200px] px-8">
+               <div className="flex items-center justify-center min-w-[200px] px-8">
                 <img 
                   src="/lovable-uploads/2e0bbae5-afa4-4ae8-aa83-7c38bb63984e.png" 
                   alt="Natural Estilo en Joyas" 
+                  className="h-12 object-contain opacity-60 hover:opacity-100 transition-opacity"
+                />
+              </div>
+              <div className="flex items-center justify-center min-w-[200px] px-8">
+                <img 
+                  src="/lovable-uploads/abe51551-9633-40c5-b8f0-0cf67038b93c.png" 
+                  alt="G Show" 
+                  className="h-12 object-contain opacity-60 hover:opacity-100 transition-opacity"
+                />
+              </div>
+              <div className="flex items-center justify-center min-w-[200px] px-8">
+                <img 
+                  src="/lovable-uploads/d7185865-4a09-40c2-8e9a-1a61a5c190e7.png" 
+                  alt="El Rincón del Maíz" 
+                  className="h-12 object-contain opacity-60 hover:opacity-100 transition-opacity"
+                />
+              </div>
+              <div className="flex items-center justify-center min-w-[200px] px-8">
+                <img 
+                  src="/lovable-uploads/71c5f84d-b7e6-4053-915d-9d76c8867c1e.png" 
+                  alt="Connexo" 
+                  className="h-12 object-contain opacity-60 hover:opacity-100 transition-opacity"
+                />
+              </div>
+              <div className="flex items-center justify-center min-w-[200px] px-8">
+                <img 
+                  src="/lovable-uploads/65f5df37-213c-454f-8d2e-ebfe756e8ffe.png" 
+                  alt="AAPlus+" 
+                  className="h-12 object-contain opacity-60 hover:opacity-100 transition-opacity"
+                />
+              </div>
+              <div className="flex items-center justify-center min-w-[200px] px-8">
+                <img 
+                  src="/lovable-uploads/a3d181b6-f518-445a-b0cf-25c3b0a85c30.png" 
+                  alt="EduFetus" 
                   className="h-12 object-contain opacity-60 hover:opacity-100 transition-opacity"
                 />
               </div>
@@ -140,10 +175,45 @@ export default function Hero() {
                   className="h-12 object-contain opacity-60 hover:opacity-100 transition-opacity"
                 />
               </div>
-              <div className="flex items-center justify-center min-w-[200px] px-8">
+               <div className="flex items-center justify-center min-w-[200px] px-8">
                 <img 
                   src="/lovable-uploads/2e0bbae5-afa4-4ae8-aa83-7c38bb63984e.png" 
                   alt="Natural Estilo en Joyas" 
+                  className="h-12 object-contain opacity-60 hover:opacity-100 transition-opacity"
+                />
+              </div>
+              <div className="flex items-center justify-center min-w-[200px] px-8">
+                <img 
+                  src="/lovable-uploads/abe51551-9633-40c5-b8f0-0cf67038b93c.png" 
+                  alt="G Show" 
+                  className="h-12 object-contain opacity-60 hover:opacity-100 transition-opacity"
+                />
+              </div>
+              <div className="flex items-center justify-center min-w-[200px] px-8">
+                <img 
+                  src="/lovable-uploads/d7185865-4a09-40c2-8e9a-1a61a5c190e7.png" 
+                  alt="El Rincón del Maíz" 
+                  className="h-12 object-contain opacity-60 hover:opacity-100 transition-opacity"
+                />
+              </div>
+              <div className="flex items-center justify-center min-w-[200px] px-8">
+                <img 
+                  src="/lovable-uploads/71c5f84d-b7e6-4053-915d-9d76c8867c1e.png" 
+                  alt="Connexo" 
+                  className="h-12 object-contain opacity-60 hover:opacity-100 transition-opacity"
+                />
+              </div>
+              <div className="flex items-center justify-center min-w-[200px] px-8">
+                <img 
+                  src="/lovable-uploads/65f5df37-213c-454f-8d2e-ebfe756e8ffe.png" 
+                  alt="AAPlus+" 
+                  className="h-12 object-contain opacity-60 hover:opacity-100 transition-opacity"
+                />
+              </div>
+              <div className="flex items-center justify-center min-w-[200px] px-8">
+                <img 
+                  src="/lovable-uploads/a3d181b6-f518-445a-b0cf-25c3b0a85c30.png" 
+                  alt="EduFetus" 
                   className="h-12 object-contain opacity-60 hover:opacity-100 transition-opacity"
                 />
               </div>
