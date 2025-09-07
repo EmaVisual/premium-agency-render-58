@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { useScrollAnimation, useScrollAnimationForm, useStaggeredAnimation } from "@/hooks/useScrollAnimation";
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -10,6 +11,10 @@ export default function Contact() {
   const [phone, setPhone] = useState("");
   const [service, setService] = useState("");
   const [message, setMessage] = useState("");
+
+  const { ref: headerRef, isVisible: headerVisible } = useScrollAnimation();
+  const { ref: formRef, isVisible: formVisible } = useScrollAnimationForm({ delay: 200 });
+  const { ref: sidebarRef, visibleItems } = useStaggeredAnimation(3, 400, 200);
 
   const onSubmit: React.FormEventHandler<HTMLFormElement> = (e) => {
     e.preventDefault();
@@ -19,15 +24,23 @@ export default function Contact() {
   };
 
   return (
-    <section id="contacto" className="container mx-auto py-20 animate-fade-in" aria-labelledby="contacto-title">
-      <div className="mb-8 text-center">
-        <span className="text-primary font-medium">Contacto</span>
-        <h2 id="contacto-title" className="font-display text-3xl md:text-4xl font-bold mt-2 animate-fade-in">Hablemos de tu proyecto</h2>
-        <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">Escríbenos y te responderemos a la brevedad. También puedes contactarnos por WhatsApp.</p>
+    <section id="contacto" className="container mx-auto py-20" aria-labelledby="contacto-title">
+      <div ref={headerRef} className="mb-8 text-center">
+        <span className={`text-primary font-medium transition-all duration-500 ${
+          headerVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-4'
+        }`}>Contacto</span>
+        <h2 id="contacto-title" className={`font-display text-3xl md:text-4xl font-bold mt-2 transition-all duration-700 delay-200 ${
+          headerVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
+        }`}>Hablemos de tu proyecto</h2>
+        <p className={`text-muted-foreground mt-2 max-w-2xl mx-auto transition-all duration-700 delay-400 ${
+          headerVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-8'
+        }`}>Escríbenos y te responderemos a la brevedad. También puedes contactarnos por WhatsApp.</p>
       </div>
 
       <div className="mx-auto grid gap-8 md:grid-cols-2">
-        <form onSubmit={onSubmit} className="space-y-4 bg-card border border-border/60 rounded-lg p-6 shadow-sm animate-scale-in">
+        <form ref={formRef} onSubmit={onSubmit} className={`space-y-4 bg-card border border-border/60 rounded-lg p-6 shadow-sm hover-scale transition-all duration-700 ${
+          formVisible ? 'animate-fade-in-left' : 'opacity-0 -translate-x-8'
+        }`}>
           <div>
             <label htmlFor="name" className="block text-sm font-medium mb-1">Nombre</label>
             <Input id="name" name="name" value={name} onChange={(e) => setName(e.target.value)} required placeholder="Tu nombre" />
@@ -61,15 +74,17 @@ export default function Contact() {
             <Textarea id="message" name="message" value={message} onChange={(e) => setMessage(e.target.value)} required placeholder="Cuéntanos brevemente qué necesitas" rows={5} />
           </div>
           <div className="flex items-center gap-3">
-            <Button type="submit" variant="hero">Enviar por WhatsApp</Button>
-            <Button asChild variant="cta">
+            <Button type="submit" variant="hero" className="hover-scale">Enviar por WhatsApp</Button>
+            <Button asChild variant="cta" className="hover-scale">
               <a href="https://wa.me/584120591116" target="_blank" rel="noopener" aria-label="Abrir WhatsApp">Abrir WhatsApp</a>
             </Button>
           </div>
         </form>
 
-        <aside className="space-y-3">
-          <div className="bg-card border border-border/60 rounded-lg p-6 animate-scale-in">
+        <aside ref={sidebarRef} className="space-y-3">
+          <div className={`bg-card border border-border/60 rounded-lg p-6 hover-scale glow-on-hover transition-all duration-700 ${
+            visibleItems[0] ? 'animate-fade-in-right' : 'opacity-0 translate-x-8'
+          }`}>
             <h3 className="font-semibold mb-2">Ubicación</h3>
             <div className="overflow-hidden rounded-lg">
               <iframe 
@@ -84,20 +99,24 @@ export default function Contact() {
               />
             </div>
           </div>
-          <div className="bg-card border border-border/60 rounded-lg p-6 animate-scale-in">
+          <div className={`bg-card border border-border/60 rounded-lg p-6 hover-scale glow-on-hover transition-all duration-700 ${
+            visibleItems[1] ? 'animate-fade-in-right' : 'opacity-0 translate-x-8'
+          }`}>
             <h3 className="font-semibold mb-2">Datos de contacto</h3>
             <ul className="space-y-2 text-muted-foreground">
-              <li><a href="https://wa.me/584120591116" target="_blank" rel="noopener" className="hover:text-foreground">WhatsApp: +58 412 059 1116</a></li>
-              <li><a href="mailto:info@daezdigital.com" className="hover:text-foreground">info@daezdigital.com</a></li>
+              <li><a href="https://wa.me/584120591116" target="_blank" rel="noopener" className="hover:text-foreground story-link">WhatsApp: +58 412 059 1116</a></li>
+              <li><a href="mailto:info@daezdigital.com" className="hover:text-foreground story-link">info@daezdigital.com</a></li>
             </ul>
           </div>
-          <div className="bg-card border border-border/60 rounded-lg p-6 animate-scale-in">
+          <div className={`bg-card border border-border/60 rounded-lg p-6 hover-scale glow-on-hover transition-all duration-700 ${
+            visibleItems[2] ? 'animate-fade-in-right' : 'opacity-0 translate-x-8'
+          }`}>
             <h3 className="font-semibold mb-2">Síguenos</h3>
             <ul className="space-y-2 text-muted-foreground">
-              <li><a href="https://www.instagram.com/daez.digital/" target="_blank" rel="noopener" className="hover:text-foreground">Instagram</a></li>
-              <li><a href="https://www.linkedin.com/company/daez-digital" target="_blank" rel="noopener" className="hover:text-foreground">LinkedIn</a></li>
-              <li><a href="https://www.facebook.com/daezdigital" target="_blank" rel="noopener" className="hover:text-foreground">Facebook</a></li>
-              <li><a href="https://www.behance.net/daezdigital" target="_blank" rel="noopener" className="hover:text-foreground">Behance</a></li>
+              <li><a href="https://www.instagram.com/daez.digital/" target="_blank" rel="noopener" className="hover:text-foreground story-link">Instagram</a></li>
+              <li><a href="https://www.linkedin.com/company/daez-digital" target="_blank" rel="noopener" className="hover:text-foreground story-link">LinkedIn</a></li>
+              <li><a href="https://www.facebook.com/daezdigital" target="_blank" rel="noopener" className="hover:text-foreground story-link">Facebook</a></li>
+              <li><a href="https://www.behance.net/daezdigital" target="_blank" rel="noopener" className="hover:text-foreground story-link">Behance</a></li>
             </ul>
           </div>
         </aside>
