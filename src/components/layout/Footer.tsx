@@ -27,7 +27,7 @@ export default function Footer() {
           <h4 className="font-semibold mb-2">Contacto</h4>
           <ul className="space-y-1 text-muted-foreground">
             <li><a href="tel:+584120591116" className="hover:text-foreground">+58 412 059 1116</a></li>
-            <li><a href="mailto:daezdigital@gmail.com" className="hover:text-foreground">daezdigital@gmail.com</a></li>
+            <li><a href="mailto:info@daezdigital.com" className="hover:text-foreground">info@daezdigital.com</a></li>
             <li><a href="https://wa.me/584120591116" target="_blank" rel="noopener" className="hover:text-foreground">WhatsApp Business</a></li>
           </ul>
         </div>
