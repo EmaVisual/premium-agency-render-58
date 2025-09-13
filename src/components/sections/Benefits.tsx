@@ -9,19 +9,19 @@ const items = [
 
 export default function Benefits() {
   return (
-    <section className="container mx-auto py-16" aria-labelledby="beneficios-title">
+    <section className="container mx-auto py-12 sm:py-16 px-4 sm:px-6" aria-labelledby="beneficios-title">
       <h2 id="beneficios-title" className="sr-only">Beneficios</h2>
-      <div className="grid gap-6 md:grid-cols-3">
+      <div className="grid gap-4 sm:gap-6 md:grid-cols-3">
         {items.map(({ icon: Icon, title, desc }) => (
           <Card key={title} className="bg-secondary/70 hover:bg-secondary/90 transition-colors hover-scale animate-scale-in">
-            <CardHeader>
-              <div className="flex items-center gap-3">
-                <Icon className="h-5 w-5 text-primary" />
-                <CardTitle className="text-xl">{title}</CardTitle>
+            <CardHeader className="pb-3">
+              <div className="flex items-center gap-2 sm:gap-3">
+                <Icon className="h-4 w-4 sm:h-5 sm:w-5 text-primary flex-shrink-0" />
+                <CardTitle className="text-lg sm:text-xl leading-tight">{title}</CardTitle>
               </div>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground">{desc}</p>
+              <p className="text-muted-foreground text-sm sm:text-base">{desc}</p>
             </CardContent>
           </Card>
         ))}

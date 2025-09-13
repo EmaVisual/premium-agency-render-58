@@ -142,6 +142,67 @@ All colors MUST be HSL.
     animation: scroll-left 30s linear infinite;
   }
 
+  /* Performance optimizations for mobile */
+  @media (prefers-reduced-motion: reduce) {
+    .animate-scroll-left {
+      animation: none;
+    }
+    
+    .floating-animation {
+      animation: none;
+    }
+    
+    .animate-fade-in, .animate-scale-in, .animate-fade-in-up {
+      animation: none;
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  /* Touch improvements for mobile */
+  @media (hover: none) and (pointer: coarse) {
+    .hover-scale:hover {
+      transform: none;
+    }
+    
+    .glow-on-hover:hover {
+      box-shadow: none;
+      transform: none;
+    }
+    
+    .story-link:hover::after {
+      transform: none;
+    }
+  }
+
+  /* Touch manipulation for better mobile interactions */
+  .touch-manipulation {
+    touch-action: manipulation;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  /* Optimize animations for mobile performance */
+  @media (max-width: 768px) {
+    .animate-scroll-left {
+      animation-duration: 35s;
+    }
+    
+    .floating-animation {
+      animation-duration: 4s;
+    }
+    
+    /* Reduce motion intensity on mobile */
+    .hover-scale {
+      transition: transform 150ms ease;
+    }
+    
+    .hover-scale:active {
+      transform: scale(0.98);
+    }
+  }
+
   .floating-animation {
     animation: float 6s ease-in-out infinite;
   }
